@@ -43,7 +43,7 @@ jobs:
           find . -type f -exec rename 's/.tex.md/.md/' '{}' \;
       - name: Commit the built files
         run: |
-          git config --global user.name '${{github.repository_owner}}'
-          git config --global user.email '${{github.actor}}@users.noreply.github.com'
+          git config --global user.name 'Readme2Tex Bot'
+          git config --global user.email '<>'
           git diff --quiet || (git add . && git commit -m "Built the .tex.md files")
           git push
