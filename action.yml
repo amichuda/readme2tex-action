@@ -1,7 +1,7 @@
 # This is a basic workflow to help you get started with Actions
 
 name: readme2tex-action
-author: montali
+author: amichuda
 description: GH action that automatically builds every .tex.md file in the repo
 branding:
   icon: "dollar-sign"
