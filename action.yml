@@ -34,6 +34,6 @@ runs:
       run: |
         git config --global user.name 'Readme2Tex Bot'
         git config --global user.email '<>'
-        git diff --quiet || (git add . && git commit -m "Built the .tex.md files")
+        git diff --quiet || (git add . && git commit -m "Texified your README!")
         git push
       shell: bash
