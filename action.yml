@@ -32,6 +32,7 @@ runs:
       shell: bash
     - name: Rename built .md files
       run: |
+        find . -type f -exec cp '{}' '{}'
         find . -type f -exec rename 's/.tex.md/.md/' '{}' \;
       shell: bash
     - name: Commit the built files
